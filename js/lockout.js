@@ -14,8 +14,8 @@ button = createButton('Breakout');
 button.mousePressed(counter);
 button.position(0,0);
 // Paragraph
-  ControlFont cf2 = new ControlFont(createFont("Times",30);
-paragraph = createP('You are locked out find the clues to Breakout seems like you need 3 keys',10,10,10,color(255),cf2);
+  //ControlFont cf2 = new ControlFont(createFont("Times",30);
+paragraph = createP('You are locked out find the clues to Breakout seems like you need 3 keys');
 paragraph.position(650,0);
 // Textbox
 textInput= createInput('Type your name here');

@@ -46,17 +46,17 @@ module.exports={
             "modules": {
                 "Setting": 1
             },
-            "classes": {},
             "fors": {
                 "p5": 1
             },
+            "classes": {},
             "namespaces": {}
         },
         "src/core/shape/2d_primitives.js": {
             "name": "src/core/shape/2d_primitives.js",
             "modules": {
-                "2D Primitives": 1
-            },
+                    "2D Primitives": 1
+      guihgihihjk  },
             "classes": {},
             "fors": {
                 "p5": 1
