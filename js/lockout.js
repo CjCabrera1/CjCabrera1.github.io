@@ -4,17 +4,22 @@ var count = 0;
 var firstOption = false;
 
 var nameInput;
+
+var font;
+font = 20;
 //keys
 var key1 = false;
 var key2 = false;
+
 function setup(){
+
 bgColor = 200
 // Button 
 button = createButton('Breakout');
 button.mousePressed(counter);
 button.position(0,0);   
 // Paragraph
-  //ControlFont cf2 = new ControlFont(createFont("Times",30);
+textSize(font);
 paragraph = createP('You are locked out find the clues to Breakout seems like you need 3 keys');
 paragraph.position(650,0);
 // Textbox
@@ -25,6 +30,9 @@ createElement("br");
 ellipseSlider=createSlider(0,600,0);
 }
 function counter(){
+	if (key1==true&&key2==true){
+		button.hide()
+	}
 	count++;
 }
 function draw(){
@@ -33,6 +41,8 @@ function draw(){
 	}
 	if (ellipseSlider.value()>590 && ellipseSlider.value()<600 && firstOption == false && count > 2){
 		hiddenP1 = createP('Riddle: What do you use every single day, but never pay for? What is truly yours but came from somewhere else? What is very personal but shared with everyone?');
+
+	
 		paragraph.html('You found the first riddle solve it to acquire your next clue')
 		firstOption = true;
 		key1 = true
@@ -43,14 +53,13 @@ function draw(){
 		key2 = true;
 	}
 	
-}
-	// using a slider to reveal a word within an ellipse 
-	// use a button combination to figure out the riddle
-	// next scene
-
-	// used an ellipse that we control with wasd to move farther (get smaller) or closer (get bigger)
+}// used an ellipse that we control with wasd to move farther (get smaller) or closer (get bigger)
 	// optical illusion stage 
 	// find a way to manuever the "ball" into the hole
 	// (moving the ball left moves the smaller )
 	
 	// end
+
+	// using a slider to reveal a word within an ellipse 
+	// use a button combination to figure out the riddle
+	// next scene
