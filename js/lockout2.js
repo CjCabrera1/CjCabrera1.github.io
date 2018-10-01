@@ -122,7 +122,8 @@ function check(){
 	if (breakout==true && clue1 ==true && clue2==true){
 		button01.hide();
 	}
-	if (breakout==true && clue1==true || clue2==true){
+	else if (breakout==true && clue1==true || clue2==true){
 		button0.hide();
 	}
+	//
 }
