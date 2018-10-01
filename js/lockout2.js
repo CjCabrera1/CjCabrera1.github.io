@@ -123,7 +123,7 @@ function check(){
 	if (breakout==true && clue1 ==true && clue2==true){
 		button01.hide();
 	}
-	else if (breakout==true && clue1==false || clue2==false){
+	if (breakout==true && clue1==false || clue2==false){
 		button0.hide();
 	}
 }
