@@ -31,7 +31,7 @@ var op;
 	paragraph = createP('This is your journey! choose a class');
 	stat = createP('Location:' + locate + ' Temp: ' + weather.main.temp);
 	stat.position(900,0)
-	enemyStat = createP('This is your buff/debuff guide: Temperature below 60 slows you down becareful! Void increases Enemy Damage! Road sets enemy damage to normal. The haven increases your damage by 1 and also a sleight buff to enemy damage')
+	enemyStat = createP('This is your buff/debuff guide: Temperature below 60 slows you down becareful! Dungeon increases Enemy Damage! Road sets enemy damage to normal. The haven increases your damage by 1 and also a sleight buff to enemy damage')
 	createCanvas(windowWidth,windowHeight-45)
 	for (let i = 0; i < 10; i++) { // start loop
     let x = random(width);
