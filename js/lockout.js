@@ -53,7 +53,8 @@ function draw(){
 		key2 = true;
 	}
 	
-}// used an ellipse that we control with wasd to move farther (get smaller) or closer (get bigger)
+}
+	// used an ellipse that we control with wasd to move farther (get smaller) or closer (get bigger)
 	// optical illusion stage 
 	// find a way to manuever the "ball" into the hole
 	// (moving the ball left moves the smaller )

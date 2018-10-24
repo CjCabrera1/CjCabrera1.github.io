@@ -6,7 +6,6 @@ var codearrayans = new Array(1,3,2,4);
 var breakout = false;
 var clue1 =false;
 var clue2 =false;
-var clue3 = false;
 function setup(){
 
 paragraph = createP('hmm it seems that there is a password needed to breakout of here this should be the final room');
@@ -102,7 +101,6 @@ function cEnter(){
 	}
 print(codearray);
 }
-
 function changeColor(){
 	bgColor= color(ran);
 	if (ran>= 0){
